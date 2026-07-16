@@ -6,11 +6,11 @@ namespace IncrementDate.Services
     /// <summary>
     /// Responsible for calculating dates by adding days.
     /// </summary>
-    public class DateCalculator
+    public class DateCalculator : IDateCalculator
     {
-        private readonly DateValidator _validator;
+        private readonly IDateValidator _validator;
 
-        public DateCalculator(DateValidator validator)
+        public DateCalculator(IDateValidator validator)
         {
             _validator = validator ?? throw new ArgumentNullException(nameof(validator));
         }

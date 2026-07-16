@@ -6,7 +6,7 @@ namespace IncrementDate.Services
     /// <summary>
     /// Responsible for validating date inputs and formats.
     /// </summary>
-    public class DateValidator
+    public class DateValidator : IDateValidator
     {
         public void ValidateInput(string inputDate, int daysToAdd)
         {

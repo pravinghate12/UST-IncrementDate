@@ -1,13 +1,16 @@
-namespace IncrementDate.Services
+using IncrementDate.Services;
+
+namespace IncrementDate.Tests
 {
     /// <summary>
     /// Responsible for executing and reporting test results.
+    /// Used only for manual/integration testing, not for unit tests.
     /// </summary>
     public class DateTestRunner
     {
-        private readonly DateCalculator _calculator;
+        private readonly IDateCalculator _calculator;
 
-        public DateTestRunner(DateCalculator calculator)
+        public DateTestRunner(IDateCalculator calculator)
         {
             _calculator = calculator ?? throw new ArgumentNullException(nameof(calculator));
         }

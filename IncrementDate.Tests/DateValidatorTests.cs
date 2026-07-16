@@ -7,7 +7,7 @@ namespace IncrementDate.Tests
     [TestFixture]
     public class DateValidatorTests
     {
-        private DateValidator _validator;
+        private IDateValidator _validator;
 
         [SetUp]
         public void Setup()
@@ -18,7 +18,7 @@ namespace IncrementDate.Tests
         [TestFixture]
         public class ValidateInputTests
         {
-            private DateValidator _validator;
+            private IDateValidator _validator;
 
             [SetUp]
             public void Setup()
@@ -65,7 +65,7 @@ namespace IncrementDate.Tests
         [TestFixture]
         public class ParseDateTests
         {
-            private DateValidator _validator;
+            private IDateValidator _validator;
 
             [SetUp]
             public void Setup()
@@ -115,7 +115,7 @@ namespace IncrementDate.Tests
         [TestFixture]
         public class ValidateDatePartsTests
         {
-            private DateValidator _validator;
+            private IDateValidator _validator;
 
             [SetUp]
             public void Setup()

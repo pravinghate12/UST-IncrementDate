@@ -6,24 +6,24 @@ namespace IncrementDate.Tests
     [TestFixture]
     public class DateCalculatorTests
     {
-        private DateCalculator _calculator;
+        private IDateCalculator _calculator;
 
         [SetUp]
         public void Setup()
         {
-            var validator = new DateValidator();
+            IDateValidator validator = new DateValidator();
             _calculator = new DateCalculator(validator);
         }
 
         [TestFixture]
         public class MonthTransitionTests
         {
-            private DateCalculator _calculator;
+            private IDateCalculator _calculator;
 
             [SetUp]
             public void Setup()
             {
-                var validator = new DateValidator();
+                IDateValidator validator = new DateValidator();
                 _calculator = new DateCalculator(validator);
             }
 
@@ -52,12 +52,12 @@ namespace IncrementDate.Tests
         [TestFixture]
         public class YearTransitionTests
         {
-            private DateCalculator _calculator;
+            private IDateCalculator _calculator;
 
             [SetUp]
             public void Setup()
             {
-                var validator = new DateValidator();
+                IDateValidator validator = new DateValidator();
                 _calculator = new DateCalculator(validator);
             }
 
@@ -72,12 +72,12 @@ namespace IncrementDate.Tests
         [TestFixture]
         public class ZeroDaysTests
         {
-            private DateCalculator _calculator;
+            private IDateCalculator _calculator;
 
             [SetUp]
             public void Setup()
             {
-                var validator = new DateValidator();
+                IDateValidator validator = new DateValidator();
                 _calculator = new DateCalculator(validator);
             }
 
@@ -92,12 +92,12 @@ namespace IncrementDate.Tests
         [TestFixture]
         public class MultipleDaysTests
         {
-            private DateCalculator _calculator;
+            private IDateCalculator _calculator;
 
             [SetUp]
             public void Setup()
             {
-                var validator = new DateValidator();
+                IDateValidator validator = new DateValidator();
                 _calculator = new DateCalculator(validator);
             }
 
@@ -119,12 +119,12 @@ namespace IncrementDate.Tests
         [TestFixture]
         public class LeapYearTests
         {
-            private DateCalculator _calculator;
+            private IDateCalculator _calculator;
 
             [SetUp]
             public void Setup()
             {
-                var validator = new DateValidator();
+                IDateValidator validator = new DateValidator();
                 _calculator = new DateCalculator(validator);
             }
 
@@ -146,12 +146,12 @@ namespace IncrementDate.Tests
         [TestFixture]
         public class ValidationTests
         {
-            private DateCalculator _calculator;
+            private IDateCalculator _calculator;
 
             [SetUp]
             public void Setup()
             {
-                var validator = new DateValidator();
+                IDateValidator validator = new DateValidator();
                 _calculator = new DateCalculator(validator);
             }
 
